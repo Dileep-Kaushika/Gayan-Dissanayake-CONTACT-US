@@ -466,6 +466,16 @@ body {
     color: white;
 }
 
+.link-card.location:hover {
+    border-color: #EA4335;
+}
+
+.link-card.location:hover .link-icon {
+    background: #EA4335;
+    color: white;
+}
+
+
 .link-card.booking:hover {
     border-color: var(--accent-gold);
 }
