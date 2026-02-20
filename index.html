@@ -152,6 +152,20 @@
     </div>
 </a>
 
+<!-- Packages PDF (opens in modal) -->
+<a href="pdf/packages.pdf" class="link-card packages" id="packagesBtn">
+    <div class="link-icon">
+        <i class="fas fa-file-pdf"></i>
+    </div>
+    <div class="link-content">
+        <h3>Packages (PDF)</h3>
+        <p>View our pricing & packages</p>
+    </div>
+    <div class="link-arrow">
+        <i class="fas fa-arrow-right"></i>
+    </div>
+</a>
+
            
         <!-- Social Media Icons (Small) -->
         <div class="social-icons">
@@ -175,5 +189,18 @@
     </div>
 
     <script src="js/script.js"></script>
+
+    <!-- PDF Modal -->
+<div class="pdf-modal" id="pdfModal" aria-hidden="true">
+    <div class="pdf-modal-content">
+        <button class="pdf-close" id="pdfCloseBtn" aria-label="Close PDF">&times;</button>
+
+        <!-- PDF viewer -->
+        <iframe id="pdfFrame" src="" title="Packages PDF"></iframe>
+
+        <!-- Fallback link -->
+        <a class="pdf-open-new" id="pdfOpenNew" href="#" target="_blank" rel="noopener">Open in new tab</a>
+    </div>
+</div>
 </body>
 </html>

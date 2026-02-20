@@ -188,3 +188,46 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// ============================================
+// PACKAGES PDF MODAL
+// ============================================
+const packagesBtn = document.getElementById('packagesBtn');
+const pdfModal = document.getElementById('pdfModal');
+const pdfFrame = document.getElementById('pdfFrame');
+const pdfCloseBtn = document.getElementById('pdfCloseBtn');
+const pdfOpenNew = document.getElementById('pdfOpenNew');
+
+function openPdfModal(pdfUrl){
+    pdfFrame.src = pdfUrl;
+    pdfOpenNew.href = pdfUrl;
+    pdfModal.classList.add('show');
+    pdfModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePdfModal(){
+    pdfModal.classList.remove('show');
+    pdfModal.setAttribute('aria-hidden', 'true');
+    pdfFrame.src = ""; // stop PDF
+    document.body.style.overflow = '';
+}
+
+packagesBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    openPdfModal(packagesBtn.getAttribute('href'));
+});
+
+pdfCloseBtn?.addEventListener('click', closePdfModal);
+
+// close when clicking outside the modal content
+pdfModal?.addEventListener('click', (e) => {
+    if (e.target === pdfModal) closePdfModal();
+});
+
+// close with ESC
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && pdfModal.classList.contains('show')) {
+        closePdfModal();
+    }
+});
