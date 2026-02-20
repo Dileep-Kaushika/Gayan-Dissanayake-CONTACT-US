@@ -15,18 +15,13 @@
         <div class="circle circle-3"></div>
     </div>
 
-    <!-- Logo Corner -->
-    
-
     <!-- Main Container -->
     <div class="container">
         <!-- Profile Section -->
         <div class="profile-section">
             <div class="profile-image">
                 <div class="profile-avatar">
-                <img src="images/1.jpg.jpeg" alt="">
-                    <!-- Replace with profile image if needed -->
-                    <!-- <img src="images/profile.jpg" alt="Profile"> -->
+                    <img src="images/1.jpg.jpeg" alt="">
                 </div>
             </div>
             <h1 class="company-name">GAYAN DISSANAYAKE</h1>
@@ -49,8 +44,6 @@
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </a>
-
-
 
             <!-- WhatsApp Link -->
             <a href="https://wa.me/message/3QWFSHT3OLIFB1" class="link-card whatsapp" target="_blank">
@@ -94,8 +87,6 @@
                 </div>
             </a>
 
-   
-
             <!-- TikTok Link -->
             <a href="https://www.tiktok.com/@_gayan_official_2?_r=1&_t=ZS-93pWeCYIeQO" class="link-card tiktok" target="_blank">
                 <div class="link-icon">
@@ -125,7 +116,7 @@
             </a>
 
             <!-- Phone Link -->
-            <a href="tel:+94 70 724 4444" class="link-card phone">
+            <a href="tel:+94707244444" class="link-card phone">
                 <div class="link-icon">
                     <i class="fas fa-phone"></i>
                 </div>
@@ -139,34 +130,36 @@
             </a>
 
             <!-- Location Link -->
-<a href="https://maps.app.goo.gl/dvM1ugtaNRqAT5NA7" class="link-card location" target="_blank">
-    <div class="link-icon">
-        <i class="fas fa-map-marker-alt"></i>
-    </div>
-    <div class="link-content">
-        <h3>Our Location</h3>
-        <p>Find us on Google Maps</p>
-    </div>
-    <div class="link-arrow">
-        <i class="fas fa-arrow-right"></i>
-    </div>
-</a>
+            <a href="https://maps.app.goo.gl/dvM1ugtaNRqAT5NA7" class="link-card location" target="_blank">
+                <div class="link-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="link-content">
+                    <h3>Our Location</h3>
+                    <p>Find us on Google Maps</p>
+                </div>
+                <div class="link-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
 
-<!-- Packages PDF (opens in modal) -->
-<a href="pdf/packages.pdf" class="link-card packages" id="packagesBtn">
-    <div class="link-icon">
-        <i class="fas fa-file-pdf"></i>
-    </div>
-    <div class="link-content">
-        <h3>Packages (PDF)</h3>
-        <p>View our pricing & packages</p>
-    </div>
-    <div class="link-arrow">
-        <i class="fas fa-arrow-right"></i>
-    </div>
-</a>
+            <!-- Packages PDF Button -->
+            <a href="pdf/packages.pdf" class="link-card packages" id="packagesBtn">
+                <div class="link-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="link-content">
+                    <h3>Packages (PDF)</h3>
+                    <p>View our pricing & packages</p>
+                </div>
+                <div class="link-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
 
-           
+        </div>
+        <!-- ✅ CLOSED .links-section HERE -->
+
         <!-- Social Media Icons (Small) -->
         <div class="social-icons">
             <a href="https://www.facebook.com/Photographer.GayanRangana#" target="_blank" class="social-icon facebook-icon">
@@ -175,11 +168,9 @@
             <a href="https://www.instagram.com/gayandissanayake_photography/" target="_blank" class="social-icon instagram-icon">
                 <i class="fab fa-instagram"></i>
             </a>
-            
             <a href="https://www.tiktok.com/@_gayan_official_2?_r=1&_t=ZS-93pWeCYIeQO" target="_blank" class="social-icon tiktok-icon">
                 <i class="fab fa-tiktok"></i>
             </a>
-           
         </div>
 
         <!-- Footer -->
@@ -188,19 +179,16 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
-
-    <!-- PDF Modal -->
-<div class="pdf-modal" id="pdfModal" aria-hidden="true">
-    <div class="pdf-modal-content">
-        <button class="pdf-close" id="pdfCloseBtn" aria-label="Close PDF">&times;</button>
-
-        <!-- PDF viewer -->
-        <iframe id="pdfFrame" src="" title="Packages PDF"></iframe>
-
-        <!-- Fallback link -->
-        <a class="pdf-open-new" id="pdfOpenNew" href="#" target="_blank" rel="noopener">Open in new tab</a>
+    <!-- ✅ PDF Modal BEFORE the script -->
+    <div class="pdf-modal" id="pdfModal" aria-hidden="true">
+        <div class="pdf-modal-content">
+            <button class="pdf-close" id="pdfCloseBtn" aria-label="Close PDF">&times;</button>
+            <iframe id="pdfFrame" src="" title="Packages PDF"></iframe>
+            <a class="pdf-open-new" id="pdfOpenNew" href="#" target="_blank" rel="noopener">Open in new tab</a>
+        </div>
     </div>
-</div>
+
+    <!-- ✅ Script AFTER the modal -->
+    <script src="js/script.js"></script>
 </body>
 </html>
